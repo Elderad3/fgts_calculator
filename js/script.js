@@ -11,28 +11,7 @@ function start() {
   typeOfContract.addEventListener('change', calcularFgts);
   numberFormat = Intl.NumberFormat('pt-BR');
   calcularFgts();
-
-  const members = ['Elder', 'Assis', 'Lidiane'];
-
-  const getGroupMembers = () => {
-    return members
-      .map(member => member.name)
-      .sort((a, b) => {
-        return a.localeCompare(b);
-      });
-  };
-  console.log(members);
-
-  function getFullName(...name) {
-    console.log(name.join(' '));
-  }
-  getFullName(1, 34, 4564, 456, 456, 456, 456546, 45);
 }
-
-function teste(array) {
-  console.log(array.map(element => (element * 1.0) / 10 + 1));
-}
-teste([1, 23, 4545, 234234, 234234, 234234, 234234]);
 
 function calcularFgts() {
   let salary = +document.querySelector('#fullSalary').value;
