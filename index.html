@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Cálculo Fgts</title>
+  </head>
+  <body>
+    <h1>Cálculo Fgts</h1>
+    <label for="fullSalary">Salário Bruto:</label>
+    <input
+      type="number"
+      id="fullSalary"
+      min="1"
+      inputmode="numeric"
+      name="fullSalary"
+    /><br /><br />
+
+    <label for="numberOfMonths">Número de meses:</label>
+    <input
+      type="number"
+      min="1"
+      inputmode="numeric"
+      id="numberOfMonths"
+      name="numberOfMonths"
+    /><br /><br />
+    <label for="typeOfContract">Tipo de contrato:</label>
+
+    <select id="typeOfContract">
+      <option value="ca">lei nº 11.180/05 (contrato de aprendizagem)</option>
+      <option value="cn" selected>Contrato Normal de trabalho</option>
+    </select>
+    <div>
+      <h2>FGTS R$: <span id="fgts"> - </span></h2>
+      <p id="message"></p>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
