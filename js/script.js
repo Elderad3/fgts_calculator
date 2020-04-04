@@ -25,7 +25,7 @@ function calcularFgts() {
   let message = '';
   if (contract === 'cn') {
     calc = salary * months * 0.08;
-    message = `Com o salário bruto de ${salary}, levando em conta que seu empregador 
+    message = `Com o salário bruto de ${formatedSalary}, levando em conta que seu empregador 
     tenha feito depósitos de 8% durande todos os ${months} meses, seu saldo atual de FGTS 
     com este empregador é ${calc}.`;
     document.querySelector('#fgts').textContent = formatNumber(calc);
